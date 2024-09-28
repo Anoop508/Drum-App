@@ -35,3 +35,9 @@ body {
     box-shadow: 5px 5px orange;
 }
 
+@media only screen and (max-width: 800px) {
+    .keys{
+        display: flex;
+        flex-direction: column;
+    }
+  }
