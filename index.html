@@ -52,6 +52,7 @@
 
     <script>
         function playSound(e) {
+            console.log(e)
             const audio = document.querySelector(`audio[data-key1="${e.keyCode}"]`);
             const key = document.querySelector(`div[data-key1="${e.keyCode}"]`)
             if (!audio) return;
@@ -68,6 +69,20 @@
         const key = document.querySelectorAll('.key')
         key.forEach(e => e.addEventListener('transitionend', removetransition));
         window.addEventListener("keydown", playSound)
+        
+        
+        const div = document.querySelectorAll('.key');
+        div.forEach(e => e.addEventListener('click', 
+        ()=>{
+        e.keyCode = e.attributes[0].nodeValue;
+        playSound(e)
+        }))
+        // div.attributes[0].nodeValue.addEventListener('click',(e)=>{
+        //     console.log(e)
+        // })
+        // div.addEventListener('click', (e)=>{
+        //     console.log(e)
+        // })
 
     </script>
 </body>
