@@ -42,7 +42,7 @@ body {
 
 @media only screen and (max-width: 600px) {
     .keys{
-        background-color: orange;
+        /* background-color: orange; */
         margin-top: 20px;
     }
 }
