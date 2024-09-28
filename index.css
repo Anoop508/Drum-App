@@ -8,11 +8,16 @@ body {
 }
 
 .keys {
+    /* background-color: orange; */
+    /* width: 70vw;
+    height: 25vw; */
+    margin-inline: 15vw;
     padding: 0px;
     margin-top: 120px;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .key {
@@ -35,9 +40,3 @@ body {
     box-shadow: 5px 5px orange;
 }
 
-@media only screen and (max-width: 800px) {
-    .keys{
-        display: flex;
-        flex-direction: column;
-    }
-  }
